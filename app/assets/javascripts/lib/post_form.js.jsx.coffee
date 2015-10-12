@@ -17,7 +17,6 @@ modulejs.define 'lib/post_form', ->
 
       return
 
-
     render: ->
       `<form className="postForm" onSubmit={this.handleSubmit}>
         <input className='author-input' type="text" placeholder="Your name" ref="author" />

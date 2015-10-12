@@ -1,11 +1,9 @@
-#= require lib/post
-
-modulejs.define 'lib/post_list', ['lib/post'], (Post) ->
+modulejs.define 'lib/post_list', ->
 
   React.createClass
 
     render: ->
-      postNodes = @props.data.map (post, index) ->
+      postNodes = @props.data.map (post) ->
         `<div className='post'>
             <div className='post-title'><h1>{post.title}</h1></div>
             <div className='post-author'><h2>{post.author}</h2></div>
