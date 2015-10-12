@@ -23,8 +23,8 @@ modulejs.define 'lib/post_form', ->
 
     render: ->
       `<form className="postForm" onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Your name" ref="author" />
-        <input type="text" placeholder="Your title" ref="title" />
-        <input type="text" placeholder="Say something..." ref="text" />
-        <input type="submit" value="Post" />
+        <input className='author-input' type="text" placeholder="Your name" ref="author" />
+        <input className='title-input' type="text" placeholder="Your title" ref="title" />
+        <textarea className="text-input" placeholder="Say something..." ref="text" />
+        <input className='button' type="submit" value="Post" />
       </form>`
