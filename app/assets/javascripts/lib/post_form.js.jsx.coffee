@@ -8,10 +8,7 @@ modulejs.define 'lib/post_form', ->
       title = @refs.title.value.trim()
       text = @refs.text.value.trim()
 
-#      return unless text && author && title
-
-      if !text || !title || !author
-        return
+      return unless text && author && title
 
       @props.onPostSubmit({author: author, text: text, title: title})
       @refs.author.value = ''
